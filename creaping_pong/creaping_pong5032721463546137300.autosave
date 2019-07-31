@@ -1,0 +1,19 @@
+Circle myCircle;
+
+
+void setup() {
+  orientation(LANDSCAPE);
+  size(displayWidth, displayHeight);
+  myCircle = new Circle(700, displayHeight/2);
+  
+}
+
+void draw() {
+  background(150, 150, 150);
+  fill(0);
+  myCircle.drawMe();
+  myCircle.moveMe(3, 3);
+ fill(random(255),random(255),random(255));
+  rect(displayWidth-50, mouseY,15,200,10);
+ 
+}
